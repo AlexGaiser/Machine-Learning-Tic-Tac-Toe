@@ -13,7 +13,7 @@
 ## How to get started
 1. Construct a `index.html` to be your starting point on this
    project. Add your necessary HTML tags, including `script` and
-   `link` tags to link to your JavaScript and CSS respectively.
+   `link` tags to link to your separate JavaScript and CSS files respectively.
 2. Construct the gameboard. The gameboard page should include the 3x3 grid,
    and at minimum a reset button. Using `id` and `class` on clickable
    elements will help you wire this up in JavaScript afterwards.
