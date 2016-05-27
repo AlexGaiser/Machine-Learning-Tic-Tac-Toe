@@ -2,11 +2,10 @@
 
 **Objective:** Build a tic tac toe game in HTML and JavaScript.
 
-## Minimum Requirements
+## The progression you might follow
 * A user should be able to click on different squares to make a move.
-* Every click will alternate between marking an `X` and `O`.
-* Upon marking of an individual cell, use JavaScript to add a class to
-  each cell to display separate colors.
+* When a square is clicked, there should be visual feedback.
+* Every click will alternate between being for Player 1 or Player 2. The visual feedback should indicate whose turn it is.
 * A cell should not be able to be replayed once marked.
 * Add a reset button that will clear the contents of the board.
 
