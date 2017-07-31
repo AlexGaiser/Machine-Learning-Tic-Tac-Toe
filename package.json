@@ -1,0 +1,43 @@
+{
+  "name": "js-tic-tac-toe-lab",
+  "version": "1.5.0",
+  "description": "Build a tic tac toe game in HTML and JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ga-wdi-exercises/tic_tac_toe.git"
+  },
+  "keywords": [
+    "javascript",
+    "oop",
+    "css",
+    "ttt",
+    "tic tac toe",
+    "game"
+  ],
+  "author": "Micah Rich",
+  "contributors": [
+    "Jason Seminara <js@ga.co>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ga-wdi-exercises/tic_tac_toe/issues"
+  },
+  "ga_co": {
+    "duration": "8",
+    "type": "lab",
+  },
+  "homepage": "https://github.com/ga-wdi-exercises/tic_tac_toe#readme",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}

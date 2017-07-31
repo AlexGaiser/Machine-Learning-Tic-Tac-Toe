@@ -2,7 +2,7 @@
 
 **Objective:** Build a tic tac toe game in HTML and JavaScript.
 
-## The progression you might follow
+## Required Game components
 * A user should be able to click on different squares to make a move.
 * When a square is clicked, there should be visual feedback.
 * Every click will alternate between being for Player 1 or Player 2. The visual feedback should indicate whose turn it is.
@@ -37,3 +37,20 @@
   opponent. If you really need a challenge, write some code that will
   play a game of Tic Tac Toe against you. (Hint: look into the minimax
   algorithm).
+
+## Starter code
+
+There is no starter code provided for this lab.
+
+## Deliverable
+
+Please find some screenshots of what you'll be creating.  Feel free to get creative with how you style your interface.
+
+![Screen-shot](assets/kz2L9f9.png)
+![Screen-shot](assets/d8lFshD.png)
+![Screen-shot](assets/Jw6hhcA.png)
+
+### Additional Resources
+
+- [CSS-Tricks "What Is The DOM"](https://css-tricks.com/dom/)
+- [More on events with Eloquent JavaScript](http://eloquentjavascript.net/14_event.html)
