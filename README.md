@@ -18,7 +18,7 @@
    elements will help you wire this up in JavaScript afterwards.
 3. JavaScript portion will be next:
 	* Locate the element first to use it within your app. Think about
-     using querySelector to locate your target elements.
+     using `querySelector` to locate your target elements.
      Try this in your console to make sure your selection works.
 	* After finding the elements, start writing logic to listen for
       `click` events on those elements.
