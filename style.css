@@ -7,26 +7,39 @@ h2{
     text-align: center;
 }
 div{
-    border:1px solid black;
+    /*border:1px solid black;*/
 }
 
-button{
-    text-align: center;
+.reset{
+    margin:24px;
+    height:50px;
+    width: 150px;
+    align-self: center;
+    background-color: red;
+    font-size: 24px;
+    color:white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .game-board{
     width: 600px;
     height: 600px;
     background-color: lightgrey;
+    background: cover;
     margin: 0 auto;
     display: flex;
     flex-wrap:wrap;
-    /*position: relative;*/
 }
 
 .cell{
     border: 1px solid black;
     height: 198px;
     width:198px;
+    /*border-radius: 150px;*/
 }
 
 .X{
