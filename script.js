@@ -25,118 +25,124 @@ function mark() {
             player1 = false
             $whichPlayer.innerHTML= "Player 2 move"
             gameObject[parseInt(this.id)] = 'X'
-            
-
-            // 1
-            if(gameObject[1]==="X"&&
-               gameObject[2]==="X"&&
-               gameObject[3]==="X"
-
-               ){
-                console.log('x wins')
-            }
-            // 2
-            else if(gameObject[4]==="X"&&
-                gameObject[5]==="X"&&
-                gameObject[6]==="X"){
-                console.log('x wins')
-            }
-            // 3
-            else if(gameObject[7]==="X"&&
-                gameObject[8]==="X"&&
-                gameObject[9]==="X"){
-                console.log('x wins')
-            }
-            // 4
-            else if(gameObject[1]==="X"&&
-                gameObject[4]==="X"&&
-                gameObject[7]==="X"){
-                console.log('x wins')
-            }
-            // 5
-            else if(gameObject[2]==="X"&&
-                gameObject[5]==="X"&&
-                gameObject[8]==="X"){
-                console.log('x wins')
-            }
-            // 6
-            else if(gameObject[3]==="X"&&
-                gameObject[6]==="X"&&
-                gameObject[9]==="X"){
-                console.log('x wins')
-            }
-            // 7
-            else if(gameObject[1]==="X"&&
-                gameObject[5]==="X"&&
-                gameObject[9]==="X"){
-                console.log('x wins')
-            }
-            else if(gameObject[3]==="X"&&
-                gameObject[5]==="X"&&
-                gameObject[7]==="X"){
-                console.log('x wins')
-            }
+            if (gameWon("X")){
+                function xwon(){alert('X is the winner!')}
+                setTimeout(xwon,200)
             }
         }
+    }
+
+        //     // 1
+        //     if(gameObject[1]==="X"&&
+        //        gameObject[2]==="X"&&
+        //        gameObject[3]==="X"
+
+        //        ){
+        //         console.log('x wins')
+        //     }
+        //     // 2
+        //     else if(gameObject[4]==="X"&&
+        //         gameObject[5]==="X"&&
+        //         gameObject[6]==="X"){
+        //         console.log('x wins')
+        //     }
+        //     // 3
+        //     else if(gameObject[7]==="X"&&
+        //         gameObject[8]==="X"&&
+        //         gameObject[9]==="X"){
+        //         console.log('x wins')
+        //     }
+        //     // 4
+        //     else if(gameObject[1]==="X"&&
+        //         gameObject[4]==="X"&&
+        //         gameObject[7]==="X"){
+        //         console.log('x wins')
+        //     }
+        //     // 5
+        //     else if(gameObject[2]==="X"&&
+        //         gameObject[5]==="X"&&
+        //         gameObject[8]==="X"){
+        //         console.log('x wins')
+        //     }
+        //     // 6
+        //     else if(gameObject[3]==="X"&&
+        //         gameObject[6]==="X"&&
+        //         gameObject[9]==="X"){
+        //         console.log('x wins')
+        //     }
+        //     // 7
+        //     else if(gameObject[1]==="X"&&
+        //         gameObject[5]==="X"&&
+        //         gameObject[9]==="X"){
+        //         console.log('x wins')
+        //     }
+        //     else if(gameObject[3]==="X"&&
+        //         gameObject[5]==="X"&&
+        //         gameObject[7]==="X"){
+        //         console.log('x wins')
+        //     }
+        //     }
+        // }
     else if(player1=== false){
         if (this.classList.contains("empty")){
             this.classList.remove("empty")
             this.classList.add("O")
             this.innerHTML = "O"
-
-        // console.log(this)
             player1 = true
             $whichPlayer.innerHTML = "Player 1 move"
             gameObject[parseInt(this.id)] = 'O'
-            console.log(gameObject)
+            if(gameWon("O")){
+                function Owon(){alert('O is the winner!')}
+                setTimeout(Owon,200)
+            }
         }
-            if(gameObject[1]==="O"&&
-               gameObject[2]==="O"&&
-               gameObject[3]==="O"
-               ){
-                console.log('O wins')
-            }
-            // 2
-            else if(gameObject[4]==="O"&&
-                gameObject[5]==="O"&&
-                gameObject[6]==="O"){
-                console.log('O wins')
-            }
-            // 3
-            else if(gameObject[7]==="O"&&
-                gameObject[8]==="O"&&
-                gameObject[9]==="O"){
-                console.log('O wins')
-            }
-            // 4
-            else if(gameObject[1]==="O"&&
-                gameObject[4]==="O"&&
-                gameObject[7]==="O"){
-                console.log('O wins')
-            }
-            // 5
-            else if(gameObject[2]==="O"&&
-                gameObject[5]==="O"&&
-                gameObject[8]==="O"){
-                console.log('O wins')
-            }
-            // 6
-            else if(gameObject[3]==="O"&&
-                gameObject[6]==="O"&&
-                gameObject[9]==="O"){
-                console.log('O wins')
-            }
-            // 7
-            else if(gameObject[1]==="O"&&
-                gameObject[5]==="O"&&
-                gameObject[9]==="O"){
-                console.log('O wins')
-            }
-            else if(gameObject[3]==="O"&&
-                gameObject[5]==="O"&&
-                gameObject[7]==="O"){
-                console.log('O wins')
-            }
+            // if(gameObject[1]==="O"&&
+            //    gameObject[2]==="O"&&
+            //    gameObject[3]==="O"
+            //    ){
+            //     console.log('O wins')
+            // }
+            // // 2
+            // else if(gameObject[4]==="O"&&
+            //     gameObject[5]==="O"&&
+            //     gameObject[6]==="O"){
+            //     console.log('O wins')
+            // }
+            // // 3
+            // else if(gameObject[7]==="O"&&
+            //     gameObject[8]==="O"&&
+            //     gameObject[9]==="O"){
+            //     console.log('O wins')
+            // }
+            // // 4
+            // else if(gameObject[1]==="O"&&
+            //     gameObject[4]==="O"&&
+            //     gameObject[7]==="O"){
+            //     console.log('O wins')
+            // }
+            // // 5
+            // else if(gameObject[2]==="O"&&
+            //     gameObject[5]==="O"&&
+            //     gameObject[8]==="O"){
+            //     console.log('O wins')
+            // }
+            // // 6
+            // else if(gameObject[3]==="O"&&
+            //     gameObject[6]==="O"&&
+            //     gameObject[9]==="O"){
+            //     console.log('O wins')
+            // }
+            // // 7
+            // else if(gameObject[1]==="O"&&
+            //     gameObject[5]==="O"&&
+            //     gameObject[9]==="O"){
+            //     console.log('O wins')
+            // }
+            // else if(gameObject[3]==="O"&&
+            //     gameObject[5]==="O"&&
+            //     gameObject[7]==="O"){
+            //     console.log('O wins')
+            // }
     }
     let $empty = document.querySelectorAll('.empty')
     
@@ -145,11 +151,8 @@ function mark() {
         // resetBoard()
         $whichPlayer.innerHTML = "Game Over"
     }
+}
 
-
-    }
-
-    // debugger
 function renderBoard(){
     let move= 0
     let player1 = true
@@ -175,12 +178,57 @@ function addGameClick(){
 
 }
 
-function gameStatus(){
-
-
-
+function gameWon(value){
+            if(gameObject[1]===value&&
+               gameObject[2]===value&&
+               gameObject[3]===value){
+                return true
+            }
+            // 2
+            else if(gameObject[4]===value&&
+                gameObject[5]===value&&
+                gameObject[6]===value){
+                return true
+            }
+            // 3
+            else if(gameObject[7]===value&&
+                gameObject[8]===value&&
+                gameObject[9]===value){
+                return true
+            }
+            // 4
+            else if(gameObject[1]===value&&
+                gameObject[4]===value&&
+                gameObject[7]===value){
+                return true
+            }
+            // 5
+            else if(gameObject[2]===value&&
+                gameObject[5]===value&&
+                gameObject[8]===value){
+                return true 
+            }
+            // 6
+            else if(gameObject[3]===value&&
+                gameObject[6]===value&&
+                gameObject[9]===value){
+                return true
+            }
+            // 7
+            else if(gameObject[1]===value&&
+                gameObject[5]===value&&
+                gameObject[9]===value){
+                return true
+            }
+            else if(gameObject[3]===value&&
+                gameObject[5]===value&&
+                gameObject[7]===value){
+                return true
+            }
+            else{
+                console.log('no winner')
+            }
 }
-
 
 
 function resetBoard(){
