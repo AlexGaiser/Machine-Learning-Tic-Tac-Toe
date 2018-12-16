@@ -1,0 +1,46 @@
+h1{
+    font-family: "Merriweather";
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+div{
+    border:1px solid black;
+}
+
+button{
+    text-align: center;
+}
+.game-board{
+    width: 600px;
+    height: 600px;
+    background-color: lightgrey;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    /*position: relative;*/
+}
+
+.cell{
+    border: 1px solid black;
+    height: 198px;
+    width:198px;
+}
+
+.X{
+    background-color: red;
+    font-size: 150px;
+    text-align: center;
+    color: white;
+    content: "X";
+}
+
+.O{
+    background-color: blue;
+    font-size: 150px;
+    text-align: center;
+    color: white;
+    content: "O";
+}
