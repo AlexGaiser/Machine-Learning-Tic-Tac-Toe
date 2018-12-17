@@ -17,7 +17,7 @@ let gameObject = {1:0,2:0,3:0,
 
 
 function mark() {
-    // console.log(player1)
+    console.log(player1)
     if (player1 === true){
         if (this.classList.contains("empty")){
             this.classList.remove("empty")
@@ -46,9 +46,9 @@ function mark() {
             if(gameWon("O")){
                 function Owon() {alert('O is the winner!')
                 resetBoard()
-                setTimeout(Owon,200)
                 
                 }
+                setTimeout(Owon,200)
         }
     }
 }
