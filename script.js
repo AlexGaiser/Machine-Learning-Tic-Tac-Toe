@@ -2,6 +2,7 @@
 // starts 0 at start if reset on red
 
 
+function game(){
 
 
 const $gameBoard = document.querySelector('.game-board')
@@ -26,12 +27,13 @@ function mark() {
             $whichPlayer.innerHTML= "Player 2 move"
             gameObject[parseInt(this.id)] = 'X'
             if (gameWon("X")){
-                function xwon(){alert('X is the winner!')}
+                function xwon() {alert('X is the winner!')
+                resetBoard()
+                 }
                 setTimeout(xwon,200)
-            }
+            }   
         }
     }
-
     else if(player1=== false){
         if (this.classList.contains("empty")){
             this.classList.remove("empty")
@@ -40,12 +42,16 @@ function mark() {
             player1 = true
             $whichPlayer.innerHTML = "Player 1 move"
             gameObject[parseInt(this.id)] = 'O'
+            
             if(gameWon("O")){
-                function Owon(){alert('O is the winner!')}
+                function Owon() {alert('O is the winner!')
+                resetBoard()
                 setTimeout(Owon,200)
-            }
+                
+                }
         }
     }
+}
     let $empty = document.querySelectorAll('.empty')
     
     // console.log($empty.length)
@@ -53,8 +59,8 @@ function mark() {
         // resetBoard()
         $whichPlayer.innerHTML = "Game Over"
     }
-}
 
+}
 function renderBoard(){
     let move= 0
     let player1 = true
@@ -131,24 +137,19 @@ function gameWon(value){
                 console.log('no winner')
             }
 }
-
+renderBoard()
+}
 
 function resetBoard(){
     let $cells = document.querySelectorAll('.cell')
     for (let $cell of $cells){
         $cell.remove()
     }
-    renderBoard()
+    game()
 }
 
-
-function computerMove(){
-    
-}
+game()
 
 
-
-
-renderBoard();
 
 

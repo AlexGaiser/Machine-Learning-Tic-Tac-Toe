@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
         <h1>Tic Tac Toe</h1>
-        <h2 id='player'>Player1 move</h2>
-        <div class="game-board"></div>
-        
-        <button class="reset" onclick="resetBoard()">Clear Board</button>
+    <div class="game-board">
+        <div class="start-container">
+          <button class="start1" onclick="AIGame()">Play AI</button>
+          
+          <button class="start2" onclick="PlayerGame()">Play Human</button>
+        </div>
+       
     </div>
 
-<script src="script.js"></script>
+<script src="start.js"></script>
 </body>
 </html>
