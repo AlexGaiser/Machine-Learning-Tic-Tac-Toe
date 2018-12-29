@@ -66,13 +66,13 @@ function renderBoard(){
     let player1 = true
     $whichPlayer.innerHTML = "Player 1 move"
     for (let i=0; i<9; i++ ){
-    let $cell = document.createElement('div')
-    $cell.classList.add("cell", "empty")
-    // $cell.innerHTML= i+1
-    $cell.id = i+1
-    // console.log($cell.classList)
-    $gameBoard.append($cell)
-    addGameClick()
+        let $cell = document.createElement('div')
+        $cell.classList.add("cell", "empty")
+        // $cell.innerHTML= i+1
+        $cell.id = i+1
+        // console.log($cell.classList)
+        $gameBoard.append($cell)
+        addGameClick()
     }
 }
 

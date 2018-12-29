@@ -2,8 +2,6 @@
 // I looked at this page for information on the minmax algorighm
 // https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37
 
-
-
 function game(){
     let aiPlayer = "O"
     let huPlayer = "X"
@@ -12,22 +10,19 @@ function game(){
     const $gameBoard = document.querySelector('.game-board')
     let $whichPlayer = document.querySelector('#player')
     let move = 0
-
     let gameObject =   [0,1,2,3,4,5,6,7,8]
  
-    
+ 
     function emptyCells(board) {
         return board.filter( cell =>  cell !="O" && cell != "X" )
-    } 
-
-
+    }
 
  function miniMax(board, player){
         let availSpots = emptyCells(board)
         if (gameWon(board, huPlayer)){
             return {score:-10};
         }
-        else if (gameWon(board, aiPlayer)){
+        else if(gameWon(board, aiPlayer)){
             return {score:10};
         }
         else if(availSpots.length ===0){
@@ -55,6 +50,8 @@ function game(){
        let bestMove
        if (player == aiPlayer){
            bestScore = -10000
+            console.log(moves)
+
            for (let i = 0; i<moves.length; i++){
                 if (moves[i].score > bestScore){
                     bestScore = moves[i].score
@@ -73,7 +70,8 @@ function game(){
         }
         return moves[bestMove]
 }
-       function mark() {
+
+    function mark() {
         moveSquare = this
             if (this.classList.contains("empty")){
                 this.classList.remove("empty")
@@ -201,10 +199,3 @@ function resetBoard(){
         game()
     }
 game()
-
-
-
-
-
-
-
