@@ -17,7 +17,7 @@ function game(){
         return board.filter( cell =>  cell !="O" && cell != "X" )
     }
 
- function miniMax(board, player){
+function miniMax(board, player){
         let availSpots = emptyCells(board)
         if (gameWon(board, huPlayer)){
             return {score:-10};

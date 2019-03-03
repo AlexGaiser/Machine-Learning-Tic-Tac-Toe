@@ -23,11 +23,11 @@ h2{
   background-color: red;
   
   text-transform: uppercase;
-  color: $brown;
+  color: white;
   font-family: arial;
   letter-spacing: 1px;
-  
-  box-shadow: -6px 6px 0 $brown;
+  font-size: 30px;
+  box-shadow: -6px 6px 3px lightslategray;
   text-decoration: none;
 }
   
@@ -78,7 +78,7 @@ h2{
     transform: rotate(45deg);
     z-index: -1;
   }
-}
+
 
 a.btn { position: relative; }
 
@@ -130,6 +130,9 @@ a:active.btn {
     align-items: center;
     justify-content: center;
 /*    margin:0 auto;*/
+}
+.startpage{
+    margin: 10vh;
 }
 
 .container{
